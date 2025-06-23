@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kahve Dünyası - Premium Kahve Çeşitleri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const chatToggle = document.getElementById("chatToggle");
+      const chatContainer = document.getElementById("chatContainer");
+  
+      let isOpen = false;
+  
+      chatToggle.addEventListener("click", () => {
+        isOpen = !isOpen;
+  
+        if (isOpen) {
+          chatContainer.classList.remove("scale-0");
+          chatContainer.classList.add("scale-100");
+        } else {
+          chatContainer.classList.remove("scale-100");
+          chatContainer.classList.add("scale-0");
+        }
+      });
+    });
+  </script> -->
+<script>
+tailwind.config={
+theme:{
+extend:{
+colors:{
+primary:'#a78bfa',
+secondary:'#8b5cf6',
+lavender: '#e0d4ff',
+darkpurple: '#6d28d9'
+},
+borderRadius:{
+'none':'0px',
+'sm':'4px',
+DEFAULT:'8px',
+'md':'12px',
+'lg':'16px',
+'xl':'20px',
+'2xl':'24px',
+'3xl':'32px',
+'full':'9999px',
+'button':'8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.group:hover .group-hover\:block {
+display: block;
+}
+#toast {
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=A%20premium%20coffee%20shop%20with%20coffee%20beans%2C%20brewing%20equipment%2C%20and%20coffee%20cups%20on%20a%20wooden%20table.%20The%20image%20has%20a%20soft%20lavender%20purple%20tint%20overlay.%20The%20left%20side%20of%20the%20image%20has%20a%20smooth%20gradient%20transition%20to%20white%2C%20creating%20space%20for%20text.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=1600&height=600&seq=coffee-hero-1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.custom-checkbox {
+position: relative;
+padding-left: 28px;
+cursor: pointer;
+}
+.custom-checkbox input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+background-color: #fff;
+border: 2px solid #a78bfa;
+border-radius: 4px;
+}
+.custom-checkbox input:checked ~ .checkmark {
+background-color: #a78bfa;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+display: block;
+}
+.custom-checkbox .checkmark:after {
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.custom-range {
+-webkit-appearance: none;
+width: 100%;
+height: 6px;
+background: #e0d4ff;
+border-radius: 5px;
+outline: none;
+}
+.custom-range::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background: #a78bfa;
+cursor: pointer;
+}
+.custom-range::-moz-range-thumb {
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background: #a78bfa;
+cursor: pointer;
+border: none;
+}
+.switch {
+position: relative;
+display: inline-block;
+width: 46px;
+height: 24px;
+}
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #e0d4ff;
+transition: .4s;
+border-radius: 24px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #a78bfa;
+}
+input:checked + .slider:before {
+transform: translateX(22px);
+}
+.tab-active {
+background-color: #a78bfa;
+color: white;
+}
+.product-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(167, 139, 250, 0.1), 0 4px 6px -2px rgba(167, 139, 250, 0.05);
+}
+.chat-widget {
+transition: all 0.3s ease;
+}
+.chat-widget.open {
+height: 400px;
+}
+</style>
+</head>
+<body class="bg-white font-sans">
+<!-- Header -->
+<header class="bg-primary shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3">
+<div class="flex items-center justify-between">
+<!-- Logo -->
+<a href="#" class="text-white font-['Pacifico'] text-3xl">logo</a>
+<!-- Search Bar -->
+<div class="hidden md:flex items-center bg-white rounded-button px-3 py-2 w-1/3">
+<div class="w-6 h-6 flex items-center justify-center text-gray-500">
+<i class="ri-search-line"></i>
+</div>
+<input type="text" placeholder="Kahve ara..." class="ml-2 w-full outline-none text-sm border-none">
+</div>
+<!-- Navigation -->
+<nav class="hidden md:flex items-center space-x-6">
+<div class="relative group">
+<a href="#" class="text-white hover:text-lavender transition-colors flex items-center">
+Kategoriler
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</a>
+<div class="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-lg w-64 py-2 hidden group-hover:block z-50">
+<a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-lavender hover:text-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-coffee-line"></i>
+</div>
+<span>Çekirdek Kahveler</span>
+</a>
+<a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-lavender hover:text-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-cup-line"></i>
+</div>
+<span>Hazır Kahveler</span>
+</a>
+<a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-lavender hover:text-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-scales-3-line"></i>
+</div>
+<span>Kahve Ekipmanları</span>
+</a>
+<a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-lavender hover:text-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-filter-3-line"></i>
+</div>
+<span>Filtre Kahveler</span>
+</a>
+<a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-lavender hover:text-primary transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-goblet-line"></i>
+</div>
+<span>Espresso Çeşitleri</span>
+</a>
+</div>
+</div>
+<a href="#" class="text-white hover:text-lavender transition-colors">İletişim</a>
+</nav>
+<!-- User Actions -->
+<div class="flex items-center space-x-4">
+<div class="relative w-6 h-6 flex items-center justify-center text-white">
+<i class="ri-shopping-cart-2-line ri-lg"></i>
+<span class="absolute -top-1 -right-1 bg-white text-primary text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">3</span>
+</div>
+<div class="w-6 h-6 flex items-center justify-center text-white">
+<i class="ri-user-line ri-lg"></i>
+</div>
+<div class="md:hidden w-6 h-6 flex items-center justify-center text-white">
+<i class="ri-menu-line ri-lg"></i>
+</div>
+</div>
+</div>
+<!-- Mobile Search -->
+<div class="mt-3 md:hidden flex items-center bg-white rounded-button px-3 py-2">
+<div class="w-6 h-6 flex items-center justify-center text-gray-500">
+<i class="ri-search-line"></i>
+</div>
+<input type="text" placeholder="Kahve ara..." class="ml-2 w-full outline-none text-sm border-none">
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section relative">
+<div class="container mx-auto px-4 py-20">
+<div class="w-full md:w-1/2 text-left">
+<h1 class="text-4xl md:text-5xl font-bold text-darkpurple mb-4">Premium Kahve Deneyimi</h1>
+<p class="text-lg text-gray-700 mb-8">Dünyanın en kaliteli kahve çekirdeklerinden özenle hazırlanan kahvelerimizle gününüzü aydınlatın. Özel harmanlarımızı keşfedin.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-button transition-colors whitespace-nowrap">
+Şimdi Alışveriş Yap
+</button>
+<button class="bg-white hover:bg-lavender text-primary border border-primary px-6 py-3 rounded-button transition-colors whitespace-nowrap">
+Özel Harmanları Keşfet
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Categories -->
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Kahve Kategorileri</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20freshly%20roasted%20coffee%20beans%20with%20a%20soft%20purple%20tint.%20The%20beans%20are%20scattered%20on%20a%20white%20surface%2C%20creating%20a%20beautiful%20contrast.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=600&height=400&seq=coffee-beans-1&orientation=landscape" alt="Çekirdek Kahveler" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">Çekirdek Kahveler</h3>
+<p class="text-gray-600 mb-4">Taze kavrulmuş, özenle seçilmiş kahve çekirdekleri. Kendi damak zevkinize göre öğütün.</p>
+<a href="#" class="text-primary hover:text-secondary font-medium flex items-center">
+Keşfet
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20beautifully%20presented%20cup%20of%20cappuccino%20with%20latte%20art%20on%20top.%20The%20coffee%20has%20a%20rich%2C%20creamy%20texture%20with%20a%20soft%20purple%20tint%20to%20the%20image.%20The%20cup%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=600&height=400&seq=coffee-cup-1&orientation=landscape" alt="Hazır Kahveler" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">Hazır Kahveler</h3>
+<p class="text-gray-600 mb-4">Pratik ve lezzetli hazır kahve karışımları. Anında kahve keyfi için ideal seçim.</p>
+<a href="#" class="text-primary hover:text-secondary font-medium flex items-center">
+Keşfet
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20modern%20coffee%20brewing%20equipment%20set%20including%20a%20pour-over%20coffee%20maker%2C%20grinder%2C%20and%20accessories.%20The%20image%20has%20a%20soft%20purple%20tint.%20The%20items%20are%20arranged%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=600&height=400&seq=coffee-equipment-1&orientation=landscape" alt="Kahve Ekipmanları" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">Kahve Ekipmanları</h3>
+<p class="text-gray-600 mb-4">Profesyonel kahve hazırlama ekipmanları. Barista kalitesinde kahveler için.</p>
+<a href="#" class="text-primary hover:text-secondary font-medium flex items-center">
+Keşfet
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Sellers -->
+<section class="py-12">
+<div class="container mx-auto px-4">
+<div class="flex justify-between items-center mb-10">
+<h2 class="text-3xl font-bold text-gray-800">En Çok Satanlar</h2>
+<div class="flex bg-lavender rounded-full p-1">
+<button class="tab-active px-4 py-2 rounded-full text-sm whitespace-nowrap">Tüm Ürünler</button>
+<button class="px-4 py-2 rounded-full text-sm text-gray-700 whitespace-nowrap">Çekirdek</button>
+<button class="px-4 py-2 rounded-full text-sm text-gray-700 whitespace-nowrap">Hazır Kahve</button>
+<button class="px-4 py-2 rounded-full text-sm text-gray-700 whitespace-nowrap">Ekipman</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20package%20of%20premium%20Ethiopian%20coffee%20beans%20with%20a%20soft%20purple%20packaging%20design.%20The%20coffee%20bag%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-product-1&orientation=landscape" alt="Etiyopya Yirgacheffe" class="w-full h-48 object-cover object-top">
+<div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">Yeni</div>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Etiyopya Yirgacheffe</h3>
+<span class="text-lg font-bold text-primary">189,90 ₺</span>
+</div>
+<p class="text-gray-600 text-sm mb-4">Çiçeksi aromalar ve narenciye notaları ile meşhur özel harman.</p>
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400">
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-half-fill"></i></div>
+</div>
+<span class="text-xs text-gray-500 ml-1">(128)</span>
+</div>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20package%20of%20premium%20Colombian%20coffee%20beans%20with%20a%20soft%20purple%20packaging%20design.%20The%20coffee%20bag%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-product-2&orientation=landscape" alt="Kolombiya Supremo" class="w-full h-48 object-cover object-top">
+<div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">%15 İndirim</div>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Kolombiya Supremo</h3>
+<div>
+<span class="text-sm line-through text-gray-400">235,90 ₺</span>
+<span class="text-lg font-bold text-primary ml-1">199,90 ₺</span>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">Dengeli asidite ve karamel notaları ile zengin bir kahve deneyimi.</p>
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400">
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+</div>
+<span class="text-xs text-gray-500 ml-1">(214)</span>
+</div>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20modern%20pour-over%20coffee%20maker%20with%20a%20glass%20carafe%20and%20wooden%20collar.%20The%20coffee%20maker%20is%20placed%20on%20a%20white%20surface.%20The%20image%20has%20a%20soft%20purple%20tint.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-product-3&orientation=landscape" alt="Chemex Pour Over" class="w-full h-48 object-cover object-top">
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Chemex Pour Over</h3>
+<span class="text-lg font-bold text-primary">649,90 ₺</span>
+</div>
+<p class="text-gray-600 text-sm mb-4">Temiz ve pürüzsüz kahve için klasik tasarımlı demleme ekipmanı.</p>
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400">
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-line"></i></div>
+</div>
+<span class="text-xs text-gray-500 ml-1">(86)</span>
+</div>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20box%20of%20premium%20instant%20coffee%20sachets%20with%20a%20soft%20purple%20packaging%20design.%20The%20box%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-product-4&orientation=landscape" alt="Premium Hazır Kahve" class="w-full h-48 object-cover object-top">
+<div class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">Çok Satan</div>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Premium Hazır Kahve</h3>
+<span class="text-lg font-bold text-primary">129,90 ₺</span>
+</div>
+<p class="text-gray-600 text-sm mb-4">Tek seferde mükemmel kahve için pratik saşe paketler (20 adet).</p>
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400">
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-half-fill"></i></div>
+</div>
+<span class="text-xs text-gray-500 ml-1">(352)</span>
+</div>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<button class="bg-white hover:bg-lavender text-primary border border-primary px-6 py-3 rounded-button transition-colors whitespace-nowrap">
+Tüm Ürünleri Görüntüle
+</button>
+</div>
+</div>
+</section>
+<!-- Product Detail Section -->
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="flex flex-col md:flex-row">
+<!-- Product Image -->
+<div class="md:w-1/2">
+<div class="h-96 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20premium%20package%20of%20Brazilian%20coffee%20beans%20with%20a%20soft%20purple%20packaging%20design.%20The%20coffee%20bag%20is%20beautifully%20presented%20with%20details%20about%20the%20coffee%20origin%20and%20flavor%20profile%20visible%20on%20the%20packaging.%20The%20product%20is%20placed%20on%20a%20white%20surface%20with%20some%20loose%20coffee%20beans%20scattered%20around.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=600&height=600&seq=coffee-detail-1&orientation=squarish" alt="Brezilya Santos" class="w-full h-full object-cover object-top">
+</div>
+</div>
+<!-- Product Info -->
+<div class="md:w-1/2 p-6 md:p-8">
+<div class="mb-6">
+<div class="flex items-center mb-2">
+<span class="bg-lavender text-primary text-xs px-2 py-1 rounded mr-2">Özel Harman</span>
+<div class="flex text-yellow-400">
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center"><i class="ri-star-half-fill"></i></div>
+<span class="text-xs text-gray-500 ml-1">(176 değerlendirme)</span>
+</div>
+</div>
+<h1 class="text-3xl font-bold text-gray-800 mb-2">Brezilya Santos Premium</h1>
+<p class="text-2xl font-bold text-primary mb-4">219,90 ₺</p>
+<p class="text-gray-600 mb-6">Brezilya'nın Santos bölgesinden gelen bu premium kahve çekirdekleri, fındık ve çikolata notaları ile zengin bir lezzet profili sunar. Orta kavrum seviyesi ile dengeli bir içim sağlar.</p>
+</div>
+<div class="mb-6">
+<h3 class="text-lg font-semibold text-gray-800 mb-3">Kahve Özellikleri</h3>
+<div class="grid grid-cols-3 gap-4 mb-4">
+<div class="text-center">
+<p class="text-gray-500 text-sm mb-1">Asidite</p>
+<div class="flex justify-center">
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-gray-300"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-gray-300"><i class="ri-drop-fill"></i></div>
+</div>
+</div>
+<div class="text-center">
+<p class="text-gray-500 text-sm mb-1">Aroma</p>
+<div class="flex justify-center">
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-gray-300"><i class="ri-drop-fill"></i></div>
+</div>
+</div>
+<div class="text-center">
+<p class="text-gray-500 text-sm mb-1">Yoğunluk</p>
+<div class="flex justify-center">
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+<div class="w-4 h-4 flex items-center justify-center text-primary"><i class="ri-drop-fill"></i></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<h3 class="text-lg font-semibold text-gray-800 mb-3">Öğütme Seçenekleri</h3>
+<div class="flex flex-wrap gap-2 mb-4">
+<button class="bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap">Çekirdek</button>
+<button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-button whitespace-nowrap">Espresso</button>
+<button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-button whitespace-nowrap">Filtre Kahve</button>
+<button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-button whitespace-nowrap">French Press</button>
+</div>
+</div>
+<div class="mb-6">
+<div class="flex items-center">
+<label class="text-gray-700 mr-4">Miktar:</label>
+<div class="flex items-center border border-gray-300 rounded-button">
+<button class="px-3 py-1 text-gray-500 hover:text-primary whitespace-nowrap">-</button>
+<input type="number" value="1" min="1" class="w-12 text-center border-none outline-none" />
+<button class="px-3 py-1 text-gray-500 hover:text-primary whitespace-nowrap">+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="flex-1 bg-primary hover:bg-secondary text-white py-3 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+<button class="w-12 h-12 flex items-center justify-center border border-gray-300 rounded-button hover:bg-lavender hover:border-primary transition-colors">
+<i class="ri-heart-line text-primary"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Tabs -->
+<div class="border-t border-gray-200 px-6 py-8">
+<div class="flex border-b border-gray-200 mb-6">
+<button class="text-primary border-b-2 border-primary px-4 py-2 mr-4 font-medium whitespace-nowrap">Ürün Detayları</button>
+<button class="text-gray-500 hover:text-gray-700 px-4 py-2 mr-4 font-medium whitespace-nowrap">Değerlendirmeler (176)</button>
+<button class="text-gray-500 hover:text-gray-700 px-4 py-2 font-medium whitespace-nowrap">Kargo ve İade</button>
+</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-800 mb-4">Ürün Açıklaması</h3>
+<p class="text-gray-600 mb-4">Brezilya'nın Santos bölgesinden gelen bu premium kahve çekirdekleri, 1200-1800 metre yükseklikteki plantasyonlarda yetiştirilmiştir. Fındık ve çikolata notaları ile zengin bir lezzet profili sunar. Orta kavrum seviyesi ile dengeli bir içim sağlar.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Menşei</h4>
+<p class="text-gray-600">Brezilya, Santos Bölgesi</p>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">İşleme Yöntemi</h4>
+<p class="text-gray-600">Yıkanmış (Washed Process)</p>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Yükselti</h4>
+<p class="text-gray-600">1200-1800 metre</p>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Kavrum Seviyesi</h4>
+<p class="text-gray-600">Orta Kavrum</p>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Aroma Profili</h4>
+<p class="text-gray-600">Fındık, Çikolata, Karamel</p>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">İçerik</h4>
+<p class="text-gray-600">250g, Taze Kavrulmuş Çekirdek Kahve</p>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Demleme Önerileri</h4>
+<p class="text-gray-600 mb-4">Bu kahve çeşidi espresso, filtre kahve ve French Press demleme yöntemleri için uygundur. En iyi sonuç için:</p>
+<ul class="list-disc pl-5 text-gray-600">
+<li class="mb-1">Espresso: 18g kahve, 36g ekstraksiyon, 25-30 saniye</li>
+<li class="mb-1">Filtre Kahve: 15g kahve, 250ml su, 2-3 dakika demleme</li>
+<li>French Press: 15g kahve, 250ml su, 4 dakika demleme</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Similar Products -->
+<section class="py-12">
+<div class="container mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-800 mb-6">Benzer Ürünler</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Similar Product 1 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20package%20of%20premium%20Guatemalan%20coffee%20beans%20with%20a%20soft%20purple%20packaging%20design.%20The%20coffee%20bag%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-similar-1&orientation=landscape" alt="Guatemala Antigua" class="w-full h-48 object-cover object-top">
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Guatemala Antigua</h3>
+<span class="text-lg font-bold text-primary">209,90 ₺</span>
+</div>
+<p class="text-gray-600 text-sm mb-4">Çikolata ve baharatlı notalar içeren özel harman.</p>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+<!-- Similar Product 2 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20package%20of%20premium%20Costa%20Rican%20coffee%20beans%20with%20a%20soft%20purple%20packaging%20design.%20The%20coffee%20bag%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-similar-2&orientation=landscape" alt="Kosta Rika Tarrazu" class="w-full h-48 object-cover object-top">
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Kosta Rika Tarrazu</h3>
+<span class="text-lg font-bold text-primary">229,90 ₺</span>
+</div>
+<p class="text-gray-600 text-sm mb-4">Canlı asidite ve meyve notaları ile öne çıkan kahve.</p>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+<!-- Similar Product 3 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20package%20of%20premium%20Kenyan%20coffee%20beans%20with%20a%20soft%20purple%20packaging%20design.%20The%20coffee%20bag%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-similar-3&orientation=landscape" alt="Kenya AA" class="w-full h-48 object-cover object-top">
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Kenya AA</h3>
+<span class="text-lg font-bold text-primary">239,90 ₺</span>
+</div>
+<p class="text-gray-600 text-sm mb-4">Keskin asidite ve meyvemsi notalar içeren kahve.</p>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+<!-- Similar Product 4 -->
+<div class="product-card bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=A%20package%20of%20premium%20Sumatra%20coffee%20beans%20with%20a%20soft%20purple%20packaging%20design.%20The%20coffee%20bag%20is%20placed%20on%20a%20white%20surface.%20High-quality%20professional%20product%20photography%20with%20soft%20natural%20lighting&width=400&height=300&seq=coffee-similar-4&orientation=landscape" alt="Sumatra Mandheling" class="w-full h-48 object-cover object-top">
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-gray-800">Sumatra Mandheling</h3>
+<span class="text-lg font-bold text-primary">199,90 ₺</span>
+</div>
+<p class="text-gray-600 text-sm mb-4">Düşük asidite ve topraklı notalar içeren kahve.</p>
+<button class="w-full bg-primary hover:bg-secondary text-white py-2 rounded-button transition-colors flex items-center justify-center whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-shopping-cart-2-line"></i>
+</div>
+Sepete Ekle
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Support Section -->
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Müşteri Desteği</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- FAQ Section -->
+<div class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-xl font-bold mb-6 text-gray-800">Sıkça Sorulan Sorular</h3>
+<div class="space-y-4">
+<div class="border-b border-gray-200 pb-4">
+<button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+<span>Siparişim ne zaman kargoya verilecek?</span>
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="mt-2">
+<p class="text-gray-600">Siparişleriniz, ödemenin onaylanmasından sonra 1-2 iş günü içerisinde kargoya verilmektedir. Hafta sonu ve resmi tatil günlerinde sipariş hazırlama işlemleri yapılmamaktadır.</p>
+</div>
+</div>
+<div class="border-b border-gray-200 pb-4">
+<button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+<span>Kahve çekirdeklerinin tazeliği nasıl korunuyor?</span>
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="hidden mt-2">
+<p class="text-gray-600">Tüm kahve çekirdeklerimiz sipariş üzerine kavrulur ve özel vakumlu paketlerde gönderilir. Paketlerin üzerinde kavrum tarihi belirtilmiştir. En iyi lezzet için, açıldıktan sonra 2-3 hafta içinde tüketmenizi öneririz.</p>
+</div>
+</div>
+<div class="border-b border-gray-200 pb-4">
+<button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+<span>Ödeme seçenekleri nelerdir?</span>
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="hidden mt-2">
+<p class="text-gray-600">Kredi kartı, banka kartı, havale/EFT ve kapıda ödeme seçenekleriyle ödeme yapabilirsiniz. 300 TL ve üzeri alışverişlerde 3 taksit imkanı sunuyoruz.</p>
+</div>
+</div>
+<div class="border-b border-gray-200 pb-4">
+<button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+<span>İade ve değişim politikanız nedir?</span>
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="hidden mt-2">
+<p class="text-gray-600">Ürünlerimizi teslim aldıktan sonra 14 gün içinde iade edebilirsiniz. Gıda ürünlerinde, ambalajı açılmamış olması şartı aranmaktadır. Ekipman ürünlerinde ise kullanılmamış ve orijinal ambalajında olması gerekmektedir.</p>
+</div>
+</div>
+<div class="pb-4">
+<button class="flex justify-between items-center w-full text-left font-medium text-gray-800">
+<span>Abonelik sistemini nasıl kullanabilirim?</span>
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="hidden mt-2">
+<p class="text-gray-600">Abonelik sistemimiz ile sevdiğiniz kahveyi belirleyeceğiniz periyotlarda (haftalık, aylık) otomatik olarak adresinize gönderiyoruz. Hesabım > Aboneliklerim bölümünden aboneliğinizi yönetebilir, istediğiniz zaman iptal edebilirsiniz.</p>
+</div>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a href="#" class="text-primary hover:text-secondary font-medium flex items-center justify-center">
+Tüm SSS'leri Görüntüle
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-xl font-bold mb-6 text-gray-800">Bize Ulaşın</h3>
+<form>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+<div>
+<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Adınız Soyadınız</label>
+<input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="Adınız Soyadınız">
+</div>
+<div>
+<label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-posta Adresiniz</label>
+<input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="ornek@email.com">
+</div>
+</div>
+<div class="mb-4">
+<label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Konu</label>
+<select id="subject" class="w-full px-3 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm pr-8 appearance-none bg-white">
+<option value="">Konu Seçiniz</option>
+<option value="order">Sipariş Durumu</option>
+<option value="product">Ürün Bilgisi</option>
+<option value="return">İade ve Değişim</option>
+<option value="other">Diğer</option>
+</select>
+</div>
+<div class="mb-4">
+<label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mesajınız</label>
+<textarea id="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-button focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="Mesajınızı buraya yazın..."></textarea>
+</div>
+<div class="mb-6">
+<label class="custom-checkbox">
+<input type="checkbox">
+<span class="checkmark"></span>
+<span class="text-sm text-gray-600">Kişisel verilerimin işlenmesine ilişkin <a href="#" class="text-primary hover:underline">aydınlatma metnini</a> okudum ve onaylıyorum.</span>
+</label>
+</div>
+<button type="submit" class="w-full bg-primary hover:bg-secondary text-white py-3 rounded-button transition-colors whitespace-nowrap">Gönder</button>
+</form>
+<div class="mt-8">
+<h4 class="font-medium text-gray-800 mb-3">İletişim Bilgilerimiz</h4>
+<div class="space-y-2">
+<div class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+<i class="ri-map-pin-line"></i>
+</div>
+<p class="text-gray-600">Bağdat Caddesi No: 123, Kadıköy, İstanbul</p>
+</div>
+<div class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<p class="text-gray-600">+90 (212) 456 78 90</p>
+</div>
+<div class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+<i class="ri-mail-line"></i>
+</div>
+<p class="text-gray-600">info@kahvedunyasi.com</p>
+</div>
+<div class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+<i class="ri-time-line"></i>
+</div>
+<p class="text-gray-600">Pazartesi - Cuma: 09:00 - 18:00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-12 bg-primary bg-opacity-10">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Kahve Dünyamıza Katılın</h2>
+<p class="text-gray-600 mb-8">Yeni ürünler, özel teklifler ve kahve ipuçları hakkında bilgi almak için bültenimize abone olun.</p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input type="email" placeholder="E-posta adresiniz" class="flex-1 px-4 py-3 rounded-button border-none focus:outline-none focus:ring-2 focus:ring-primary text-sm">
+<button class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-button transition-colors whitespace-nowrap">Abone Ol</button>
+</div>
+<p class="text-xs text-gray-500 mt-4">Abone olarak, <a href="#" class="text-primary hover:underline">gizlilik politikamızı</a> kabul etmiş olursunuz. İstediğiniz zaman abonelikten çıkabilirsiniz.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div>
+<a href="#" class="text-white font-['Pacifico'] text-2xl mb-4 inline-block">logo</a>
+<p class="text-gray-400 mb-6">Premium kahve deneyimi için doğru adres. 2010'dan beri kaliteli kahve sunuyoruz.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-twitter-x-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-youtube-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Hızlı Bağlantılar</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kahve Rehberi</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mağazalarımız</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kariyer</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Yardım</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sipariş Takibi</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">İade ve Değişim</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kargo Bilgileri</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sıkça Sorulan Sorular</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Gizlilik Politikası</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kullanım Koşulları</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">İletişim</h4>
+<ul class="space-y-3">
+<li class="flex">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">Bağdat Caddesi No: 123, Kadıköy, İstanbul</span>
+</li>
+<li class="flex">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">+90 (212) 456 78 90</span>
+</li>
+<li class="flex">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-2">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@kahvedunyasi.com</span>
+</li>
+</ul>
+<h4 class="text-lg font-bold mt-6 mb-4">Ödeme Yöntemleri</h4>
+<div class="flex space-x-3">
+<div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+<i class="ri-visa-fill text-blue-800"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+<i class="ri-mastercard-fill text-red-500"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+<i class="ri-paypal-fill text-blue-600"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+<i class="ri-bank-card-fill text-gray-800"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+<p>&copy; 2025 Kahve Dünyası. Tüm hakları saklıdır.</p>
+</div>
+</div>
+</footer>
+<!-- Live Chat Widget -->
+<div class="chat-widget fixed bottom-6 right-6 z-50">
+<!-- Chatbot Toggle Button -->
+<!-- Chat Toggle Button -->
+<button id="chatToggle"
+  class="bg-blue-600 hover:bg-blue-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-colors fixed bottom-6 right-6 z-50">
+  <div class="w-6 h-6 flex items-center justify-center">
+    <i class="ri-customer-service-2-line ri-lg"></i>
+  </div>
+</button>
+
+<!-- Chatbot Container (başta gizli) -->
+<div id="chatBox" class="hidden bg-white rounded-lg shadow-xl w-96 overflow-hidden transition-all duration-300 mt-4">
+  <div class="bg-primary p-4 text-white">
+      <div class="flex justify-between items-center">
+          <div class="flex items-center">
+              <div class="w-8 h-8 rounded-full bg-white text-primary flex items-center justify-center mr-2">
+                  <i class="ri-customer-service-2-line"></i>
+              </div>
+              <div>
+                  <h3 class="font-bold">Müşteri Desteği</h3>
+                  <p class="text-xs opacity-90">Çevrimiçi</p>
+              </div>
+          </div>
+          <button id="chatClose" class="w-6 h-6 flex items-center justify-center text-white hover:text-gray-200">
+              <i class="ri-close-line"></i>
+          </button>
+      </div>
+  </div>
+
+  <div id="chatMessages" class="p-4 h-96 overflow-y-auto border-b">
+      <div class="flex flex-col space-y-4" id="messageContainer">
+          </div>
+  </div>
+
+  <div class="p-4 bg-gray-50">
+      <div class="flex flex-col space-y-2">
+          <div class="flex flex-wrap gap-2 mb-2">
+              <button class="quick-reply-btn bg-white hover:bg-lavender text-gray-700 px-3 py-1 rounded-full text-sm border border-gray-200 transition-colors whitespace-nowrap">Sipariş Durumu</button>
+              <button class="quick-reply-btn bg-white hover:bg-lavender text-gray-700 px-3 py-1 rounded-full text-sm border border-gray-200 transition-colors whitespace-nowrap">Ürün Bilgisi</button>
+              <button class="quick-reply-btn bg-white hover:bg-lavender text-gray-700 px-3 py-1 rounded-full text-sm border border-gray-200 transition-colors whitespace-nowrap">İade İşlemi</button>
+          </div>
+          <div class="flex items-end gap-2">
+              <div class="flex-1 bg-white rounded-lg shadow-sm">
+                  <textarea id="chatInput" rows="1" placeholder="Mesajınızı yazın..." class="w-full p-3 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary text-sm resize-none border-none"></textarea>
+              </div>
+              <button id="sendMessage" class="bg-primary hover:bg-secondary text-white p-3 rounded-lg transition-colors flex-shrink-0">
+                  <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-send-plane-fill"></i>
+                  </div>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+<script id="faqToggleScript">
+document.addEventListener('DOMContentLoaded', function() {
+const faqButtons = document.querySelectorAll('.border-b button');
+faqButtons.forEach(button => {
+button.addEventListener('click', function() {
+const content = this.nextElementSibling;
+const icon = this.querySelector('i');
+if (content.classList.contains('hidden')) {
+content.classList.remove('hidden');
+icon.classList.remove('ri-arrow-down-s-line');
+icon.classList.add('ri-arrow-up-s-line');
+} else {
+content.classList.add('hidden');
+icon.classList.remove('ri-arrow-up-s-line');
+icon.classList.add('ri-arrow-down-s-line');
+}
+});
+});
+});
+</script>
+<script id="chatWidgetScript">
+document.addEventListener('DOMContentLoaded', function() {
+const chatToggle = document.getElementById('chatToggle');
+const chatClose = document.getElementById('chatClose');
+const chatBox = document.getElementById('chatBox');
+const chatInput = document.getElementById('chatInput');
+const sendMessage = document.getElementById('sendMessage');
+const messageContainer = document.getElementById('messageContainer');
+const quickReplyButtons = document.querySelectorAll('.quick-reply-btn');
+const customerServiceResponses = [
+    "Anlıyorum, size bu konuda yardımcı olabilirim.",
+    "Bu konuyu hemen inceliyorum.",
+    "Size daha detaylı bilgi vermek için kontrol ediyorum.",
+    "Başka sorularınız varsa yanıtlamaktan memnuniyet duyarım.",
+    "Bu konuda endişelenmeyin, size yardımcı olacağım.",
+    "Hemen bakıyorum, lütfen kısa bir süre bekleyin.",
+    "Elbette, bu konuda size yardımcı olabilirim.",
+    "Anladım, hemen ilgileniyorum.",
+    "Size en kısa sürede yardımcı olacağım.",
+    "Bu konuyu çözmek için elimden geleni yapacağım."
+];
+function addMessage(message, isUser = false) {
+const messageDiv = document.createElement('div');
+messageDiv.className = 'flex items-start';
+const timestamp = new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
+if (isUser) {
+messageDiv.innerHTML = `
+<div class="ml-auto bg-primary text-white rounded-lg p-3 max-w-[80%]">
+<p class="text-sm">${message}</p>
+<span class="text-xs opacity-75 mt-1 block">${timestamp}</span>
+</div>
+`;
+} else {
+messageDiv.innerHTML = `
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-2 flex-shrink-0">
+<i class="ri-customer-service-2-line"></i>
+</div>
+<div class="bg-gray-100 rounded-lg p-3 max-w-[80%]">
+<p class="text-sm">${message}</p>
+<span class="text-xs text-gray-500 mt-1 block">${timestamp}</span>
+</div>
+`;
+}
+messageContainer.appendChild(messageDiv);
+messageContainer.scrollTop = messageContainer.scrollHeight;
+}
+chatToggle.addEventListener('click', function() {
+chatBox.classList.toggle('hidden');
+if (!chatBox.classList.contains('hidden')) {
+setTimeout(() => {
+chatBox.classList.add('open');
+chatInput.focus();
+}, 10);
+} else {
+chatBox.classList.remove('open');
+}
+});
+chatClose.addEventListener('click', function() {
+chatBox.classList.remove('open');
+setTimeout(() => {
+chatBox.classList.add('hidden');
+}, 300);
+});
+chatInput.addEventListener('keypress', function(e) {
+if (e.key === 'Enter' && !e.shiftKey) {
+e.preventDefault();
+sendMessage.click();
+}
+});
+chatInput.addEventListener('input', function() {
+this.style.height = 'auto';
+this.style.height = (this.scrollHeight) + 'px';
+});
+// YENİ KOD (Bunu yapıştırın)
+sendMessage.addEventListener('click', function() {
+    const message = chatInput.value.trim();
+    if (!message) {
+        return;
+    }
+
+    addMessage(message, true); // Kullanıcının mesajını ekrana hemen ekle
+    chatInput.value = '';
+    chatInput.style.height = 'auto';
+
+    // Python Flask sunucusuna istek gönder
+    fetch('http://127.0.0.1:5000/chat', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: message })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Sunucudan gelen cevabı ekrana ekle
+        addMessage(data.answer);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        addMessage("Üzgünüm, bir hata oluştu. Lütfen daha sonra tekrar deneyin.");
+    });
+});
+quickReplyButtons.forEach(button => {
+button.addEventListener('click', function() {
+const message = this.textContent;
+addMessage(message, true);
+setTimeout(() => {
+addMessage('Seçtiğiniz konu hakkında size yardımcı olmak için hazırım. Lütfen detayları paylaşın.');
+}, 1000);
+});
+});
+});
+</script>
+<script id="cartScript">
+document.addEventListener('DOMContentLoaded', function() {
+const quantityInput = document.querySelector('input[type="number"]');
+const decreaseBtn = quantityInput.previousElementSibling;
+const increaseBtn = quantityInput.nextElementSibling;
+function showToast(message) {
+const existingToast = document.getElementById('toast');
+if (existingToast) {
+existingToast.remove();
+}
+const toast = document.createElement('div');
+toast.id = 'toast';
+toast.className = 'fixed top-20 right-4 bg-white shadow-lg rounded-lg p-4 z-50 flex flex-col min-w-[300px] transform transition-all duration-300 translate-x-full';
+toast.innerHTML = `
+<div class="flex items-center mb-3">
+<div class="w-6 h-6 flex items-center justify-center text-green-500 mr-2">
+<i class="ri-checkbox-circle-fill"></i>
+</div>
+<p class="text-gray-800 font-medium flex-1">${message}</p>
+<button onclick="this.parentElement.parentElement.remove()" class="w-6 h-6 flex items-center justify-center text-gray-400 hover:text-gray-600">
+<i class="ri-close-line"></i>
+</button>
+</div>
+<div class="flex gap-2">
+<a href="" data-readdy="true" class="flex-1">
+<button class="w-full bg-primary hover:bg-secondary text-white px-3 py-2 rounded-button text-sm whitespace-nowrap">
+Sepete Git
+</button>
+</a>
+<button onclick="this.parentElement.parentElement.remove()" class="flex-1 border border-gray-200 hover:bg-gray-50 px-3 py-2 rounded-button text-sm text-gray-600 whitespace-nowrap">
+Alışverişe Devam Et
+</button>
+</div>
+`;
+document.body.appendChild(toast);
+setTimeout(() => toast.classList.remove('translate-x-full'), 100);
+setTimeout(() => {
+toast.classList.add('translate-x-full');
+setTimeout(() => toast.remove(), 300);
+}, 5000);
+}
+function updateCartCount() {
+const cartCount = document.querySelector('.ri-shopping-cart-2-line').nextElementSibling;
+const currentCount = parseInt(cartCount.textContent);
+cartCount.textContent = currentCount + 1;
+}
+document.querySelectorAll('.product-card button, .flex-1 button').forEach(button => {
+button.addEventListener('click', function() {
+showToast('Ürün sepetinize eklendi');
+updateCartCount();
+});
+});
+decreaseBtn.addEventListener('click', function() {
+if (quantityInput.value > 1) {
+quantityInput.value = parseInt(quantityInput.value) - 1;
+}
+});
+increaseBtn.addEventListener('click', function() {
+quantityInput.value = parseInt(quantityInput.value) + 1;
+});
+});
+</script>
+<script id="tabSwitcherScript">
+document.addEventListener('DOMContentLoaded', function() {
+const tabButtons = document.querySelectorAll('.bg-lavender button');
+tabButtons.forEach(button => {
+button.addEventListener('click', function() {
+tabButtons.forEach(btn => {
+btn.classList.remove('tab-active');
+});
+this.classList.add('tab-active');
+});
+});
+});
+</script>
+
+</body>
+</html>

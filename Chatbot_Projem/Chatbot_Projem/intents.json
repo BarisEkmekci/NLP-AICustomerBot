@@ -1,0 +1,424 @@
+{
+  "intents": [
+    {
+  "tag": "greeting",
+  "patterns": [
+    "Merhaba",
+    "Selam",
+    "Nasılsın",
+    "Orada kimse var mı?",
+    "Hey",
+    "İyi günler",
+    "Merhabalar",
+    "Kolay gelsin",
+    "Selamun aleyküm",
+    "Günaydın",
+    "Tünaydın",
+    "İyi akşamlar",
+    "Şöyle bir bakayım dedim",
+    "Selam dostum",
+    "Selam chatbot",
+    "Burada mısın?",
+    "Bir şey soracağım",
+    "Kahve Dünyası’na geldim",
+    "Konuşabilir miyiz?",
+    "Müsait misin?"
+  ],
+  "responses": [
+    "Merhaba! Kahve Dünyası'na hoş geldiniz. Size nasıl yardımcı olabilirim?",
+    "Selam! Nasıl yardımcı olabilirim?",
+    "Merhaba, ziyaret ettiğiniz için teşekkürler. Ne tür bir bilgi arıyordunuz?",
+    "Sizi burada görmek harika! Kahveyle ilgili ne öğrenmek istersiniz?",
+    "Buyurun, neyle ilgileniyorsunuz?",
+    "Hoş geldiniz, kahve dolu bir gün dilerim!",
+    "Selam! Kahve hakkında bilgi almak için doğru yerdesiniz.",
+    "Buradayım! Size yardımcı olmak için sabırsızlanıyorum.",
+    "Günaydın! Bir fincan bilgi ister misiniz?"
+  ]
+},
+{
+  "tag": "goodbye",
+  "patterns": [
+    "Görüşürüz",
+    "Hoşçakal",
+    "Bay bay",
+    "İyi günler dilerim",
+    "Kapatabiliriz",
+    "Görüşmek üzere",
+    "Kendine iyi bak",
+    "Şimdilik bu kadar",
+    "Sonra konuşalım",
+    "Daha sonra tekrar geleceğim",
+    "Bugünlük bu kadar",
+    "Hoşça kal",
+    "Bir sonraki kahvede görüşürüz",
+    "İyi akşamlar",
+    "Geceler",
+    "Şimdilik elveda"
+  ],
+  "responses": [
+    "Görüşmek üzere, yine bekleriz!",
+    "İyi günler dilerim!",
+    "Hoşça kalın! Kahve dolu günler!",
+    "Sizinle konuşmak keyifliydi. Kahveyle kalın!",
+    "Bir dahaki sohbetimizde görüşmek üzere!",
+    "Her zaman bekleriz. Keyifli günler!",
+    "Afiyet olsun, hoşça kalın!",
+    "İyi geceler ve bol kafeinli sabahlar!"
+  ]
+},
+{
+  "tag": "thanks",
+  "patterns": [
+    "Teşekkürler",
+    "Teşekkür ederim",
+    "Çok yardımcı oldun",
+    "Sağ ol",
+    "Çok teşekkürler",
+    "Harika, teşekkürler",
+    "İyi ki varsın",
+    "Ne güzel açıklama yaptın",
+    "Bu bilgi çok işime yaradı",
+    "Süpersin",
+    "Minnettarım",
+    "Elinize sağlık",
+    "Yardımcı olduğun için teşekkür ederim",
+    "Cevap için teşekkürler",
+    "Açıklama için sağ ol"
+  ],
+  "responses": [
+    "Yardımcı olabildiğime sevindim!",
+    "Rica ederim, ne demek!",
+    "Her zaman beklerim. Afiyet olsun!",
+    "Sizin için buradayım!",
+    "Memnun kaldıysanız ne mutlu bana!",
+    "Kahveyle ilgili her konuda yardımcı olmaktan mutluluk duyarım.",
+    "Teşekkür etmek size düşer ama ben de size teşekkür ederim!",
+    "Benimle konuştuğunuz için asıl ben teşekkür ederim."
+  ]
+},
+{
+  "tag": "shipping_info",
+  "patterns": [
+    "Siparişim ne zaman kargolanır?",
+    "Kargo ne zaman gelir?",
+    "Teslimat süresi nedir?",
+    "Kargo bilgisi alabilir miyim?",
+    "Teslimat kaç gün sürer?",
+    "Kargom ne zaman ulaşır?",
+    "Kargo ücreti var mı?",
+    "Kargo bedava mı?",
+    "Ürün kaç günde gelir?",
+    "Ne zaman elime ulaşır?",
+    "Kargom yola çıktı mı?",
+    "Siparişim kargoya verildi mi?",
+    "Kargom nerede?",
+    "Kargo durumunu öğrenebilir miyim?",
+    "Kargo takip numarası nerede?"
+  ],
+  "responses": [
+    "Siparişleriniz, ödemeniz onaylandıktan sonra 1-2 iş günü içerisinde kargoya verilir. Hafta sonu ve resmi tatillerde kargolama yapılmamaktadır.",
+    "Kargo ücretleri ve kampanyalar hakkında en güncel bilgiyi ödeme sayfasında görebilirsiniz.",
+    "Siparişinizi verdikten sonra size e-posta ile kargo takip numarası gönderilecektir.",
+    "Ürününüz yola çıktıktan sonra genellikle 1-3 iş günü içinde teslim edilir.",
+    "Ücretsiz kargo kampanyalarımızdan faydalanmak için minimum sepet tutarını kontrol edebilirsiniz."
+  ]
+},
+{
+  "tag": "payment_options",
+  "patterns": [
+    "Ödeme seçenekleriniz neler?",
+    "Nasıl ödeyebilirim?",
+    "Kredi kartı geçerli mi?",
+    "Taksit yapıyor musunuz?",
+    "Kapıda ödeme var mı?",
+    "Hangi kartlar geçiyor?",
+    "Ödeme yöntemleri hakkında bilgi verir misin?",
+    "Kapıda nakit ödeyebilir miyim?",
+    "Sanal kartla ödeme yapabilir miyim?",
+    "Papara ile ödeme yapılıyor mu?",
+    "Banka havalesi kabul ediyor musunuz?",
+    "Mobil ödeme mümkün mü?",
+    "BKM Express var mı?",
+    "Kredi kartına taksit var mı?",
+    "Yurt dışı kartlar geçerli mi?"
+  ],
+  "responses": [
+    "Kredi kartı, banka kartı, havale/EFT ve kapıda ödeme seçenekleriyle ödeme yapabilirsiniz. 300 TL ve üzeri alışverişlerinizde 3 taksit imkanımız bulunmaktadır.",
+    "Visa, MasterCard ve Troy logolu kartlarla ödeme kabul ediyoruz. Kapıda nakit veya kredi kartı ile de ödeme yapabilirsiniz.",
+    "Siparişinizi tamamladıktan sonra ödeme adımında tüm yöntemleri görebilirsiniz.",
+    "Yurt dışı kartlarla ödeme şu anda desteklenmemektedir.",
+    "Papara ve mobil ödeme sistemleri şu anda aktif değildir ancak yakında sistemimize entegre edilecektir."
+  ]
+},
+{
+  "tag": "return_policy",
+  "patterns": [
+    "İade ve değişim politikanız nedir?",
+    "Ürünü nasıl iade edebilirim?",
+    "İade süresi ne kadar?",
+    "Ürünü değiştirmek istiyorum",
+    "Beğenmezsem geri gönderebilir miyim?",
+    "İade koşulları nelerdir?",
+    "Yanlış ürün geldi, ne yapmalıyım?",
+    "Ürün hasarlı geldi, ne yapacağım?",
+    "Aldığım ürünü iade etmek istiyorum",
+    "İade süreci nasıl işliyor?",
+    "Kargo iadesini kim karşılıyor?",
+    "İade için bir form doldurmam gerekiyor mu?",
+    "İade ettiğim ürünün parasını ne zaman alırım?"
+  ],
+  "responses": [
+    "Ürünlerimizi teslim aldıktan sonra 14 gün içinde iade edebilirsiniz. Gıda ürünlerinde ambalajın açılmamış olması, ekipman ürünlerinde ise kullanılmamış ve orijinal ambalajında olması gerekmektedir. Detaylı bilgi için 'İade ve Değişim' sayfamızı ziyaret edebilirsiniz.",
+    "İade işlemleriniz için destek ekibimizle info@kahvedunyasi.com adresinden iletişime geçebilirsiniz.",
+    "Hasarlı ya da yanlış ürün gelmesi durumunda, ürün fotoğrafı ile birlikte bize ulaşarak ücretsiz iade sürecini başlatabilirsiniz.",
+    "İade edilen ürün tarafımıza ulaştıktan sonra, ödeme 5-7 iş günü içinde hesabınıza iade edilir.",
+    "Hijyen nedeniyle ambalajı açılmış gıda ürünlerinde iade kabul edilmemektedir."
+  ]
+},
+{
+  "tag": "product_recommendation",
+  "patterns": [
+    "Hangi kahveyi önerirsiniz?",
+    "En çok satan kahveniz hangisi?",
+    "Yeni başlayan biriyim, ne almalıyım?",
+    "Yumuşak içimli bir kahve arıyorum",
+    "Filtre kahve için ne önerirsiniz?",
+    "Sert bir kahve istiyorum",
+    "Asiditesi düşük kahve var mı?",
+    "Espresso için hangi çekirdek uygun?",
+    "Meyvemsi tatlar seviyorum",
+    "Kahve önerisi alabilir miyim?",
+    "Kahveye yeni başlıyorum, ne önerirsiniz?",
+    "Demleme için hangi kahve daha iyi?",
+    "Tatlı kahveleriniz hangileri?",
+    "Yoğun aromalı kahve var mı?",
+    "Geceleri içebileceğim kafeinsiz kahve var mı?"
+  ],
+  "responses": [
+    "Meyvemsi ve çiçeksi notalar için Etiyopya Yirgacheffe harika bir tercih olabilir. Hafif, canlı ve aromatik bir içim sunar.",
+    "Dengeli ve çikolata notalı bir lezzet için Kolombiya Supremo veya Brezilya Santos öneriyoruz.",
+    "Kahveye yeni başlıyorsanız yumuşak içimli kahvelerimizden Guatemala Antigua veya Kolombiya Supremo ile başlamanızı öneririm.",
+    "Espresso için özel olarak hazırlanan espresso harmanımız veya Brezilya Santos, dolgun gövdesiyle ideal seçimdir.",
+    "Asiditesi düşük ve tok içimli kahvelerimiz arasında Guatemala Huehuetenango da yer alıyor.",
+    "Kafeinsiz kahve arıyorsanız Swiss Water yöntemiyle kafeini giderilmiş özel ürünlerimizden deneyebilirsiniz.",
+    "Tatlı notalar seviyorsanız vanilya veya karamelli aromalı filtre kahvelerimize de göz atabilirsiniz."
+  ]
+},
+{
+  "tag": "grind_options",
+  "patterns": [
+    "Kahveyi öğütüyor musunuz?",
+    "Çekirdek olarak mı alabiliyoruz?",
+    "Filtre kahve için öğütülmüş alabilir miyim?",
+    "Espresso ayarında çeker misiniz?",
+    "Öğütme seçenekleri nelerdir?",
+    "French Press için öğütebilir misiniz?",
+    "Cold Brew için uygun öğütme yapıyor musunuz?",
+    "Kahve nasıl öğütülüyor?",
+    "Her demleme için farklı öğütme var mı?",
+    "Satın alırken nasıl öğütüleceğini seçebilir miyim?",
+    "Türk kahvesi için de öğütme yapıyor musunuz?",
+    "Öğütme ayarı seçebiliyor muyum?",
+    "Çekirdeği öğütmeden almak istiyorum, mümkün mü?"
+  ],
+  "responses": [
+    "Evet, tüm kahvelerimizi sipariş sırasında belirttiğiniz demleme yöntemine göre taze olarak öğütüyoruz.",
+    "Espresso, filtre kahve, French Press, Cold Brew, Türk kahvesi gibi farklı öğütme ayarlarımız mevcuttur. Sipariş notuna demleme türünüzü eklemeniz yeterli.",
+    "Kahveyi çekirdek olarak da alabilirsiniz. Böylece evinizde taze taze öğütebilirsiniz.",
+    "İster öğütülmüş ister çekirdek olarak sipariş verebilirsiniz, tamamen sizin tercihinize göre hazırlanır.",
+    "Cold Brew için daha kalın, Türk kahvesi içinse çok ince öğütme yapıyoruz. Dilerseniz özel ayar talep edebilirsiniz."
+  ]
+},
+{
+  "tag": "contact_info",
+  "patterns": [
+    "Size nasıl ulaşabilirim?",
+    "Telefon numaranız nedir?",
+    "Adresiniz nerede?",
+    "Mail adresiniz nedir?",
+    "Çalışma saatleriniz nelerdir?",
+    "Destek ekibine nasıl ulaşırım?",
+    "Şubeniz var mı?",
+    "İstanbul’daki mağazanız nerede?",
+    "Canlı destek var mı?",
+    "Hafta sonu açık mısınız?",
+    "Sosyal medya hesaplarınız nedir?",
+    "Sizi arayabilir miyim?",
+    "Whatsapp destek hattınız var mı?",
+    "İletişim formunuz var mı?",
+    "Ofisinizin konumu nedir?"
+  ],
+  "responses": [
+    "Bize +90 (212) 456 78 90 numaralı telefondan, info@kahvedunyasi.com e-posta adresinden veya Bağdat Caddesi No: 123, Kadıköy, İstanbul adresimizden ulaşabilirsiniz.",
+    "Çalışma saatlerimiz Pazartesi - Cuma: 09:00 - 18:00 arasıdır. Hafta sonları destek hizmeti sınırlıdır.",
+    "Destek ekibimize web sitemiz üzerinden iletişim formunu doldurarak veya doğrudan e-posta ile ulaşabilirsiniz.",
+    "Instagram, Twitter ve Facebook'ta @kahvedunyasitr kullanıcı adıyla bizi takip edebilirsiniz.",
+    "Şubelerimize dair detaylı listeyi web sitemizde 'Mağazalarımız' bölümünden görebilirsiniz."
+  ]
+},
+{
+  "tag": "coffee_freshness",
+  "patterns": [
+    "Kahveleriniz taze mi?",
+    "Kahvenin tazeliğini nasıl koruyorsunuz?",
+    "Kavrum tarihi nedir?",
+    "Ne kadar taze?",
+    "Çekirdekler ne zaman kavruldu?",
+    "Sipariş verince taze kavruluyor mu?",
+    "Kahveler stokta bekliyor mu?",
+    "Tazelik garantisi veriyor musunuz?",
+    "Taze kavrulmuş kahve alabilir miyim?",
+    "Kahvenin raf ömrü nedir?",
+    "Taze kahve kokar mı?",
+    "Kahvenin bayat olup olmadığını nasıl anlarım?",
+    "Kahvenin aromasını ne kadar süre korur?"
+  ],
+  "responses": [
+    "Tüm kahve çekirdeklerimiz sipariş üzerine taze olarak kavrulur ve özel vakumlu paketlerde gönderilir.",
+    "Kavurma tarihini her ürün paketinde şeffaf şekilde görebilirsiniz.",
+    "Kahvelerimiz stokta tutulmaz; her siparişe özel olarak kavrulur ve öğütülür.",
+    "Paketi açtıktan sonra kahvenizi 2-3 hafta içinde tüketmenizi öneriyoruz.",
+    "Tazelik ve aroma için kahvelerimizi serin, kuru ve güneş görmeyen yerlerde saklamanızı tavsiye ederiz."
+  ]
+},
+{
+  "tag": "funny",
+  "patterns": [
+    "Bana bir şaka anlat",
+    "Komik bir şey söyle",
+    "Espri yap",
+    "Biraz gülelim",
+    "Kahveyle ilgili komik bir şey söyle",
+    "Beni güldür",
+    "Kahkaha attır",
+    "Espirili misin?",
+    "Latife yap",
+    "Bir kahve fıkrası biliyor musun?"
+  ],
+  "responses": [
+    "Bir fincan kahve, doktora 'Lütfen biraz daha bekleyin, henüz uyanamadım.' demiş.",
+    "Neden kahve çekirdekleri hiç kavga etmez? Çünkü her zaman bir orta yol bulurlar!",
+    "Barista neden işe geç kalmış? Çünkü kahvesi çok ağırdı!",
+    "Kahveyle ilk tanıştığımda... sabaha kadar muhabbet ettik, uyuyamadım!",
+    "Kahve bağımlısı musun? Hayır, sadece her sabah onsuz yapamıyorum... ve öğle de... ve akşam da..."
+  ]
+},
+{
+  "tag": "brewing_tips",
+  "patterns": [
+    "Filtre kahve nasıl yapılır?",
+    "Espresso demlemek için ne yapmalıyım?",
+    "French press kullanımı nasıl?",
+    "V60 ile nasıl demleme yaparım?",
+    "Chemex demleme öneriniz var mı?",
+    "En iyi demleme yönteminiz hangisi?",
+    "Kahveyi nasıl demlemeliyim?",
+    "Demleme süresi ne kadar olmalı?",
+    "Kahve oranı ne kadar olmalı?",
+    "Kahve nasıl daha aromalı olur?",
+    "Demleme hataları nelerdir?",
+    "Cold Brew nasıl hazırlanır?",
+    "Kahvemin tadı acı oldu, neden?",
+    "Kahve sert oldu, ne yapmalıyım?",
+    "Yumuşak içim için hangi yöntemi önerirsiniz?"
+  ],
+  "responses": [
+    "Filtre kahve için genellikle 1:16 oran (1 gram kahveye 16 gram su) önerilir. 92-96°C sıcaklıktaki su ile 3-4 dakika demleme idealdir.",
+    "Espresso için ince öğütülmüş kahve ve 9 bar basınç gerekir. 25-30 saniyelik bir shot süresi önerilir.",
+    "French Press için orta-kalın öğütülmüş kahve ve 4 dakikalık demleme süresi idealdir. Oran olarak 1:15 kullanabilirsiniz.",
+    "Chemex için kağıt filtre ve daha kalın öğütülmüş kahve önerilir. Demleme süresi ortalama 4-5 dakika olmalı.",
+    "Cold Brew için 1:8 oran kullanarak kahveyi 12-16 saat boyunca soğuk suda demleyin ve buzdolabında saklayın.",
+    "Kahveniz acıysa aşırı ekstraksiyon olabilir; demleme süresini veya öğütme boyutunu gözden geçirin.",
+    "Daha yumuşak içimli kahveler için düşük asiditeli çekirdekleri tercih edin ve demleme süresine dikkat edin."
+  ]
+},
+{
+  "tag": "complaint",
+  "patterns": [
+    "Siparişim eksik geldi",
+    "Yanlış ürün gönderilmiş",
+    "Ürün hasarlı geldi",
+    "Memnun kalmadım",
+    "Destek alamıyorum",
+    "İade kabul edilmedi",
+    "Kargom kayboldu",
+    "Kahve bayat çıktı",
+    "Tatmin edici bir hizmet alamadım",
+    "Mağdur oldum",
+    "Ürün zamanında gelmedi",
+    "Müşteri hizmetleri ulaşılmıyor",
+    "Yardım edebilir misiniz, sorun yaşadım?",
+    "Bir şikayetim var",
+    "Şikayetimi nereye iletebilirim?"
+  ],
+  "responses": [
+    "Üzgünüm, yaşadığınız durum için hemen yardımcı olmak isteriz. Lütfen info@kahvedunyasi.com adresine detaylı bilgiyle birlikte ulaşın.",
+    "Bu durumdan dolayı özür dileriz. Destek ekibimiz en kısa sürede sizinle iletişime geçecektir.",
+    "Şikayetinizi dikkate alıyoruz. Daha iyi bir hizmet için geri bildiriminiz bizim için çok değerli.",
+    "Hemen ilgileniyoruz. Lütfen sipariş numaranızla birlikte destek hattımıza ulaşın.",
+    "Bu deneyim sizi hayal kırıklığına uğrattıysa çok üzgünüz. Telafi etmek için buradayız."
+  ]
+},
+{
+  "tag": "order_help",
+  "patterns": [
+    "Sipariş vermekte zorlanıyorum",
+    "Nasıl sipariş verebilirim?",
+    "Sepetime ürün ekleyemiyorum",
+    "Ödeme adımında sorun yaşıyorum",
+    "Siparişimi tamamlayamıyorum",
+    "Yardım edebilir misiniz?",
+    "Mobilde sipariş veremiyorum",
+    "Web sitesi çalışmıyor gibi",
+    "Ürünleri göremiyorum",
+    "Sepetim silindi",
+    "Sipariş verirken hata alıyorum",
+    "Kahve seçemiyorum",
+    "Sipariş süreci nasıl işliyor?",
+    "Bir şeyler ters gidiyor",
+    "Sipariş verirken destek lazım"
+  ],
+  "responses": [
+    "Sipariş vermek için ürün sayfasından seçiminizi yapıp 'Sepete Ekle' butonuna tıklayın, ardından ödeme adımlarını takip edin.",
+    "Herhangi bir sorun yaşarsanız bizimle info@kahvedunyasi.com adresinden iletişime geçebilirsiniz.",
+    "Tarayıcı önbelleğini temizlemeyi ya da farklı bir cihazdan yeniden denemeyi öneriyoruz.",
+    "Mobil sitemiz üzerinden sipariş verebilmeniz için tarayıcınızın güncel olması gerekiyor.",
+    "Hemen yardımcı olalım, lütfen yaşadığınız sorunu daha detaylı açıklayın."
+  ]
+},
+{
+  "tag": "coffee_types",
+  "patterns": [
+    "Hangi kahve çeşitleriniz var?",
+    "Kaç çeşit kahve var?",
+    "Espresso ile Americano farkı nedir?",
+    "Filtre kahve ne demek?",
+    "Latte nasıl bir kahve?",
+    "Cappuccino nedir?",
+    "Mocha ile latte arasındaki fark nedir?",
+    "Türk kahvesi satıyor musunuz?",
+    "Soğuk kahve çeşitleriniz neler?",
+    "Aromalı kahveleriniz var mı?",
+    "Dondurmalı kahveniz var mı?",
+    "En sert kahve hangisi?",
+    "Tatlı kahve önerir misiniz?",
+    "Vegan kahveleriniz var mı?",
+    "Sütlü kahve çeşitleri neler?",
+    "Kahve bazlı içecekleriniz neler?"
+  ],
+  "responses": [
+    "Menümüzde espresso bazlı kahveler (Espresso, Americano, Latte, Cappuccino, Mocha), filtre kahve, Türk kahvesi, cold brew, aromalı kahveler ve sütlü alternatifler bulunmaktadır.",
+    "Espresso, yoğun ve kısa bir kahvedir. Americano ise üzerine sıcak su eklenmiş espressodur ve daha hafif içimlidir.",
+    "Latte, espresso ve bol süt içerir. Cappuccino ise süt köpüğüyle daha dengeli ve yoğun bir yapıdadır.",
+    "Filtre kahve, daha yumuşak içimli ve uzun demlemeli bir kahvedir. French press veya V60 ile hazırlanabilir.",
+    "Türk kahvemiz klasik ve damak tadına uygun olarak sunulmaktadır. Farklı aromalarda Türk kahvelerimiz de mevcuttur.",
+    "Mocha, çikolata aromalı bir latte çeşididir. Hem kahve hem tatlı sevenler için ideal!",
+    "Soğuk kahve seçeneklerimiz arasında buzlu latte, cold brew, frappe ve espresso tonic gibi ferahlatıcı içecekler bulunmaktadır.",
+    "Aromalı kahveler arasında vanilyalı, karamelli, fındıklı ve çikolatalı çeşitlerimiz mevcuttur.",
+    "Tüm sütlü kahvelerimiz bitkisel süt alternatifleriyle hazırlanabilir (badem, yulaf, soya).",
+    "En sert içim arıyorsanız ristretto veya double espresso deneyebilirsiniz."
+  ]
+ }
+]
+  }
